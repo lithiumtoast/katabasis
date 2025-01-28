@@ -110,19 +110,19 @@ jobs:
       uses: gittools/actions/gitversion/execute@v0.9.7
 
     - name: "Download native libraries: win-x64"
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: "native-libraries-win-x64"
         path: './ext/katabasis-bedrock/lib/win-x64'
 
     - name: "Download native libraries: osx"
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: "native-libraries-osx"
         path: './ext/katabasis-bedrock/lib/osx'
 
     - name: "Download native libraries: linux-x64"
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: "native-libraries-linux-x64"
         path: './ext/katabasis-bedrock/lib/linux-x64'
